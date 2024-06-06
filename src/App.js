@@ -13,7 +13,6 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <h2>JSX</h2>
         <div className="container">
           <h3>Hello Dude!! How are you?</h3>
@@ -35,19 +34,33 @@ function App() {
             Job: {singer2.job}
           </p>
         </div>
-
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
+
+      <Person></Person>
+      <Person></Person>
+      <Person></Person>
+      <h2>New Component</h2>
+      <Friend></Friend>
+      <Friend></Friend>
+      <Friend></Friend>
+    </div>
+  );
+}
+
+function Person() {
+  return (
+    <div className="person">
+      <h1>Shaikh Muntasir</h1>
+      <p>Job: Footballer </p>
+    </div>
+  );
+}
+
+function Friend() {
+  return (
+    <div className="container">
+      <h3>Name: Masum</h3>
+      <p>Job: Doctor</p>
     </div>
   );
 }
